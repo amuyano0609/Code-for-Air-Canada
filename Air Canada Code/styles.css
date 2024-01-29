@@ -1,0 +1,295 @@
+/* I added the modifications here for the Buttos 5 + 6 here */
+main {
+  min-height: 150vh;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.underline {
+  height: 0.25rem;
+  width: 5rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 80vw;
+  max-width: var(--fixed-width);
+}
+
+.review {
+  background: var(--clr-white);
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.review:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.img-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+#person-img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+
+.img-container::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transform: translateY(25%);
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+
+.img-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: var(--clr-primary-5);
+  position: absolute;
+  top: -0.25rem;
+  right: -0.5rem;
+  border-radius: 50%;
+}
+
+#author {
+  margin-bottom: 0.25rem;
+}
+
+#job {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: var(--clr-primary-5);
+  font-size: 0.85rem;
+}
+
+#info {
+  margin-bottom: 0.75rem;
+}
+
+/* I added styling for the navigation buttons here */
+.button-container {
+  margin-top: 10px;
+}
+
+.prev-btn,
+.next-btn,
+.start-btn,
+.end-btn {
+  color: black;
+  font-size: 1.25rem;
+  background: grey; 
+  border: none;
+  padding: 10px 15px; 
+  border-radius: 5px;
+  margin: 0 10px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover,
+.start-btn:hover,
+.end-btn:hover {
+  color: black;
+  background: rgba(162, 163, 90, 0.212); 
+}
+
+/* I put the flex container for the employee text here  */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* I put the function for navigation bar here */
+nav {
+  background-color: rgba(128, 128, 128, 0.422);
+  color: white;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+}
+
+.nav-header i {
+  color: black;
+  margin-right: 20px;
+  font-size: 3rem; 
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+}
+
+.links li {
+  margin-right: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* I put the Counter function here */
+#counter {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  color: black;
+}
+
+/* I put the box container function here */
+.employee-section {
+  display: none; 
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.employee-container {
+  background-color: lightgrey; 
+  padding: 15px; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 20px;
+  max-width: 350px; 
+  margin: 0 auto; 
+  font-size: 1.1rem; 
+}
+
+.recruitment-section,
+.why-work-section,
+.team-says-section {
+  text-align: center;
+}
+
+box-container {
+  margin-top: 30px;
+}
+
+/* This is the shared styles for all box containers */
+.box-container {
+  background-color: #f5f5f5; 
+  padding: 20px; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto; 
+  width: 90%; 
+}
+
+/* This is the box container for the Recruitment section */
+.recruitment-section .box-container {
+  background-color: #f5f5f5; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto; 
+  width: 90%; 
+}
+
+/* I bold the specific title in the Recruitment section here */
+.recruitment-section .box-container p.title {
+  font-weight: bold;
+}
+
+/* I remove bold styling for other paragraphs in the box container here */
+.recruitment-section .box-container p:not(.title) {
+  font-weight: normal;
+}
+
+/* Image in the Recruitment section */
+.recruitment-image {
+  max-width: 100%;
+  height: auto;
+  width: 40%; 
+  margin-top: 10px; 
+}
+
+/* I reduce the gap between the title and the image here */
+.recruitment-section .box-container p.title {
+  margin-top: 5px; /* Adjusted margin-top to reduce the gap */
+}
+
+/* Bold specific titles in the Why Work With Us? section */
+.why-work-section .box-container p.title {
+  font-weight: bold;
+}
+
+/* I remove bold styling for other paragraphs in the box container here */
+.why-work-section .box-container p:not(.title) {
+  font-weight: normal;
+}
+
+/* Bold specific titles in the Team Says section */
+.team-says-section .box-container p.title {
+  font-weight: bold;
+}
+
+/* I remove bold styling for other paragraphs in the box container here */
+.team-says-section .box-container p:not(.title) {
+  font-weight: normal;
+}
+.why-work-section .box-container img,
+.team-says-section .box-container img {
+  max-width: 100%;
+  height: auto;
+  width: 40%;
+  margin-top: 10px; 
+}
+

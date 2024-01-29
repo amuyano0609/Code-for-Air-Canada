@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Air Canada</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- I add the Font Awesome CSS here -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+   <!-- I added the declared function for Button 7 here-->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1"></script> <!-- Include the confetti library -->
+  </head>  
+<body>
+  <nav>
+    <div class="nav-center">
+      <div class="nav-header">
+      <!-- I used the imgur here to upload pictures-->
+        <img src="https://i.imgur.com/KTKpVmK.png" alt="Air Canada Logo" class="logo" style="width: 150px;" />
+        <!-- I added the airplane symbol here -->
+        <i class="fas fa-plane-departure"></i>
+      </div>
+      <!-- Buttons for 1, 2, 3, 4, 5, 6, 7-->
+      <button id="changeColorScheme">Change Color Scheme</button>
+      <button id="employeeBtn">Employee Statement</button>
+      <button id="specialBtn">Special Button</button>
+      <ul class="links">
+        <button id="likeBtn">Like +2</button>
+        <button id="dislikeBtn">Dislike -1</button>
+        <button id="resetBtn">Reset</button>
+        <div id="counter">0</div>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="employee-section">
+    <div id="employeeInfo" class="employee-container">
+      <div class="img-container">
+        <img src="" id="person-img" alt="" />
+      </div>
+      <div class="text-container">
+        <h4 id="author"></h4>
+        <p id="job"></p>
+        <p id="info" class="employee-info"></p>
+        <div class="button-container">
+          <button class="start-btn" onclick="showStartEmployee()">
+            Start
+          </button>
+          <button class="prev-btn" onclick="showPrevEmployee()">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="next-btn" onclick="showNextEmployee()">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <button class="end-btn" onclick="showEndEmployee()">
+            End
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recruitment-section">
+    <div class="box-container">
+      <img src="https://i.vgy.me/vWmnX7.jpg" alt="Recruitment Image" class="recruitment-image">
+      <p class="title">We Are Hiring!</p>
+      <p>We are currently looking for a Programming 11/12 Developer to join our team. If you are passionate about coding and want to be a part of something great, we would love to hear from you!</p>
+     </div>
+  </section>
+
+  <section class="why-work-section">
+    <div class="box-container horizontal">
+      <img src="https://i.vgy.me/2Y2Lnb.png" alt="2Y2Lnb.png">
+      <p class="title">Why Work With Us?</p>
+      <p>Exciting Projects</p>
+      <p>Fun and Collaborative Environment</p>
+      <p>Learning and Growth Opportunities</p>
+      <p>Flexible Work Hours</p>
+      <p>Great Team Spirit</p>
+    </div>
+  </section>
+
+  <section class="team-says-section">
+    <div class="box-container center">
+      <img src="https://i.vgy.me/fNppRs.jpg" alt="fNppRs.jpg">
+      <p class="title">What Our Team Says</p>
+      <p>"I love working at Air Canada! The team is amazing, and every day is a new challenge." - John, Software Developer.</p>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
